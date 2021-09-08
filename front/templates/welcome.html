@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accueil</title>
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="/">Accueil</a>
+        <a href="/about">À Propos</a>
+        <a href="/contact">Me Contacter</a>
+    </div>
+
+    <main>
+        <h1>Accueil</h1>
+        <p>Bienvenue sur un site web très simple me servant de portfolio</p>
+        <p id="phrase">{{id}}</p>
+    </main>
+</body>
+
+</html> 

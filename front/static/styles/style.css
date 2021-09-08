@@ -1,0 +1,43 @@
+ a {
+  color: #7491f0;
+  text-decoration: none;
+  font-size: 1vw;
+}
+ .sidenav {
+    height: 100vh;
+    display: block;
+    background-color: rgb(32, 32, 32);
+    float: left;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 1.5vw;
+    color: #818181;
+    display: block;
+  }
+
+  a:hover {
+    color: #bd5b5b;
+  }
+  
+  main {
+    color: #d1d1d1;
+    margin-left: 12vw;
+  }
+  h1{
+    font-size: 3vw;
+  }
+  p{
+    font-size: 1vw;
+  }
+  body{
+    background-color: #464646;
+    display: inline;
+  }
+  html{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ul{
+    font-size: 1vw;
+  }
