@@ -38,26 +38,27 @@ docker rmi back:01
 # forme du projet
 
 
-  _____________________________________________________
-  |                     projet                        |
-  |___________________________________________________|
-  |-docker-compose.yml                                |
-  |-readme.md                                         |
-  |+front                                             |
-  |+back                                              |
-  |_________________________________|_________________|
-  |              front              |       back      |
-  |_________________________________|_________________|
-  |-Dockerfile                      |-Dockerfile      |
-  |-requirements.txt                |-requirements.txt|
-  |-app.py                          |-main.py         |
-  |+templates                       |-database.db     |
-  |+static/styles                   |_________________|
-  |_________________|_______________|
-  |    templates    | static/styles |
-  |_________________|_______________|
-  |-welcome.html    |-style.css     |
-  |-about.html      |_______________|
-  |-contact.html    |
-  |-database.html   |
-  |_________________|
+    _____________________________________________________
+    |                     projet                        |
+    |___________________________________________________|
+    |-docker-compose.yml                                |
+    |-readme.md                                         |
+    |+front                                             |
+    |+back                                              |
+    |_________________________________|_________________|
+    |              front              |       back      |
+    |_________________________________|_________________|
+    |-Dockerfile                      |-Dockerfile      |
+    |-requirements.txt                |-requirements.txt|
+    |-app.py                          |-main.py         |
+    |+templates                       |-database.db     |
+    |+static/styles                   |_________________|
+    |_________________|_______________|
+    |    templates    | static/styles |
+    |_________________|_______________|
+    |-welcome.html    |-style.css     |
+    |-about.html      |_______________|
+    |-contact.html    |
+    |-database.html   |
+    |_________________|
+
