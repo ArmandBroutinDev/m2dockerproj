@@ -1,27 +1,27 @@
-version: '3.3'
+version: "3"
 services:
-    web:
-        build: ./app
-        ports:
-            - "3306:3306"
-        volumes:
-            - ./app:/app
-        depends_on:
-            - redis-container
-        networks:
-            - front
-            - back
+  back:
+    build: ./back
+    container_name: back
+    ports:
+      - "3305:3305"
+    environment: 
+      PORT : 3305
+    healthcheck:
+      test: curl --fail -s http://localhost:3305/ || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
-    redis-container:
-        image: redis
-        networks: 
-            - back
-
-networks: 
-    front:
-        driver: bridge
-        ipam:
-            driver: default
-            config:
-                - subnet: 172.16.238.0/24
-    back:
+  front:
+    build: ./front
+    container_name: front
+    ports: 
+      - "3306:3306"
+    environment: 
+      PORT : 3306
+    healthcheck:
+      test: curl --fail -s http://localhost:3306/ || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3

@@ -1,24 +1,36 @@
+
 # application projet
-projet en docker contenant:</br>
-v du frontend</br>
-v du backend</br>
-une base de donnée</br>
-v un dockerfile</br>
-un docker compose</br>
-v un readme</br>
-un schéma</br>
-une documentation autogérée</br>
+
+projet en docker contenant:  
+- du frontend
+- du backend
+- une base de donnée
+- un dockerfile
+- un docker compose
+- un readme
+- un schéma
+- une documentation autogérée
+
 # concept
-Mon objectif est de produire une version augmentée du site portfolio avec des données stockées dans une base de données pour montrer mes compétences.</br>
-on a en sortie des pages web avec le front ce dernier fonctionne en flask</br>
-le backend utilise fastapi et dans le futur du sqlalchemy pour acceder a une base (probablement en mysql)</br>
-l'image sera stockée sur docker-hub</br>
-Une quatrième route sera ajoutée et servira d'interface front et back</br>
-il y a un docker compose non configuré</br>
+
+Mon objectif est de produire une version augmentée du site portfolio avec des données stockées dans une base de données pour montrer mes compétences.
+
+on a en sortie des pages web avec le front ce dernier fonctionne en flask.
+
+le backend utilise fastapi et dans le futur du sqlalchemy pour acceder a une base (probablement en mysql)
+
+l'image sera stockée sur docker-hub
+
+Une quatrième route sera ajoutée et servira d'interface front et back
+
+il y a un docker compose non configuré
 
 # comment build
+
 #todo
+
 # comment run
+
 #todo
 
 # forme du projet
@@ -55,16 +67,18 @@ il y a un docker compose non configuré</br>
 
 
 # commandes utilisées pour les tests (temporaire)
-docker build -t test:01 .</br>
-docker run --name test -p 3306:3306 -d test:01</br>
-</br>
-docker stop test</br>
-docker rm test</br>
-docker rmi test:01</br>
-</br>
-docker build -t back:01 .</br>
-docker run --name back -p 3305:3305 -d back:01</br>
-</br>
-docker stop back</br>
-docker rm back</br>
-docker rmi back:01</br>
+
+
+    docker build -t front:01 .
+    docker run --name front -p 3306:3306 -d front:01
+
+    docker stop front
+    docker rm front
+    docker rmi front:01
+
+    docker build -t back:01 .
+    docker run --name back -p 3305:3305 -d back:01
+
+    docker stop back
+    docker rm back
+    docker rmi back:01
